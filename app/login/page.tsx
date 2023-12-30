@@ -1,13 +1,12 @@
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Label } from "@/ui/label"
+import { Input } from "@/ui/input"
+import { Button } from "@/ui/button"
 
 export default function login() {
   return (
     <main key="1" className="flex flex-col items-center justify-center min-h-screen bg-[#ffffff]">
       <div className="mb-10">
-        <LogInIcon className="w-20 h-20 text-[#8b4513]" />
+        <LogInIcon  />
       </div>
       <div className="w-96 bg-white shadow-md rounded-lg overflow-hidden">
         <div className="p-8">
@@ -55,9 +54,8 @@ export default function login() {
   )
 }
 
-function LogInIcon(props) {
+function LogInIcon() {
   return (
-    <img src="https://vjti.ac.in/wp-content/uploads/oldupload/cropped-New-VJTI-Logo_1-1-60x87.jpg"></img>
+    <img src="https://vjti.ac.in/wp-content/uploads/oldupload/cropped-New-VJTI-Logo_1-1-60x87.jpg" className="w-20 h-20 text-[#8b4513]"></img>
   )
 }
-
