@@ -26,7 +26,7 @@ export default function login() {
     }
   }
   return (
-    <main key="1" className="flex flex-col items-center justify-center min-h-screen bg-[#ffffff]">
+    <main key="1" className="flex flex-col items-center justify-center min-h-screen bg-black">
       <div className="mb-10">
         <LogInIcon  />
       </div>
@@ -39,7 +39,7 @@ export default function login() {
             </Label>
             <Input
               onChange={(e)=>{setEmail({email:e.target.value})}}
-              className="w-full mt-1"
+              className="w-full mt-1 text-black"
               id="mail"
               placeholder="Enter your VJTI email"
               required
